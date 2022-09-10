@@ -1,32 +1,26 @@
-import { useEffect, useState } from "react"
 import { HeaderIcon } from "./HeaderIcon"
 
-export const Header = () => {
-    const [triangles, setTriangles] = useState([true, false, false, false])
-
-    const displayTriangle = (tr) => {
-        setTriangles(tr)
-    }
+export const Header = ({triangles, onClick}) => {
 
     return (
         <header className="header">
             <HeaderIcon 
-            triangleHeight={triangles[0]}
-            onClick={()=>displayTriangle([true, false, false, false])}
+            triangles={triangles[0]}
+            onClick={()=>onClick([true, false, false, false])}
             />
             <HeaderIcon 
-            triangleHeight={triangles[1]}
-            onClick={()=>displayTriangle([false, true, false, false])}
+            triangles={triangles[1]}
+            onClick={()=>onClick([false, true, false, false])}
 
             />
             <HeaderIcon 
-            triangleHeight={triangles[2]}
-            onClick={()=>displayTriangle([false, false, true, false])}
+            triangles={triangles[2]}
+            onClick={()=>onClick([false, false, true, false])}
 
             />
             <HeaderIcon 
-            triangleHeight={triangles[3]}
-            onClick={()=>displayTriangle([false, false, false, true])}
+            triangles={triangles[3]}
+            onClick={()=>onClick([false, false, false, true])}
 
             />
         </header>

@@ -1,11 +1,13 @@
 import { Home } from "./Home"
+import { Work } from "./Work"
+import { ContactMe } from "./ContactMe"
 
-export const Section = () => {
+export const Section = ({triangles}) => {
     return (
         <section className="section">
-            <div className="section--home">
-                <Home />
-            </div>
+                {triangles[0] && <Home />}
+                {triangles[1] && <Work />}
+                {triangles[2] && <ContactMe />}
         </section>
     )
 }

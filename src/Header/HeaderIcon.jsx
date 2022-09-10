@@ -1,8 +1,8 @@
-export const HeaderIcon = ({triangleHeight, onClick}) => {
+export const HeaderIcon = ({triangles, onClick}) => {
     return (
         <div onClick={onClick} className="header--icon">
             <div className="header--icon--image"></div>
-            {triangleHeight && <div className="header--icon--triangle"></div>}
+            {triangles && <div className="header--icon--triangle"></div>}
         </div>
     )
 }
