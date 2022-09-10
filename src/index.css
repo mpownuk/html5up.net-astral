@@ -45,6 +45,16 @@
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
   border-bottom: 1rem solid #ffffff;
+  transition: 0.4s;
+}
+
+.header .header--icon .header--icon--triangle__none {
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 0rem solid #ffffff;
+  transition: 0.4s;
 }
 
 .section {
@@ -180,6 +190,18 @@
 
 .footer .footer--paragraph {
   font-size: 0.625rem;
+}
+
+@media screen and (max-width: 360px) {
+  .header {
+    min-width: 320px;
+  }
+  .section {
+    min-width: 320px;
+  }
+  .footer {
+    min-width: 320px;
+  }
 }
 
 @media screen and (min-width: 361px) {
