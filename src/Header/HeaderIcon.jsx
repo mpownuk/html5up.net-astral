@@ -2,7 +2,7 @@ export const HeaderIcon = ({triangles, onClick}) => {
     return (
         <div onClick={onClick} className="header--icon">
             <div className="header--icon--image"></div>
-            {triangles && <div className="header--icon--triangle"></div>}
+            <div className={triangles ? "header--icon--triangle" : "header--icon--triangle__none"}></div>
         </div>
     )
 }
