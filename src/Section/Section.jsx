@@ -3,11 +3,16 @@ import { Work } from "./Work"
 import { ContactMe } from "./ContactMe"
 
 export const Section = ({triangles}) => {
+
+const hideAndDispaly = (elem) => {
+        return elem
+}
+
     return (
         <section className="section">
-                {triangles[0] && <Home />}
-                {triangles[1] && <Work />}
-                {triangles[2] && <ContactMe />}
+                {triangles[0] ? hideAndDispaly(<Home triangles={triangles} />) : null}
+                {triangles[1] ? hideAndDispaly(<Work triangles={triangles} />) : null}
+                {triangles[2] ? hideAndDispaly(<ContactMe triangles={triangles} />) : null}
         </section>
     )
 }

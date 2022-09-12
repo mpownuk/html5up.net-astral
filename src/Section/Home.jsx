@@ -1,7 +1,10 @@
 
-export const Home = () => {
+export const Home = ({triangles, className}) => {
+
+
+
     return (
-        <div className="section--home">
+        <div className={triangles[0] ? "section--home blue" : "section--home red"}>
             <div className='section--home--container'>
                 <div className='section--home--header'>
                     <h1 className='section--home--header__heading'>Jane Doe</h1>
