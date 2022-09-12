@@ -1,6 +1,6 @@
-export const ContactMe = () => {
+export const ContactMe = ({triangles}) => {
      return (
-        <div className="section--contact">
+        <div className={triangles[2] ? "section--contact blue" : "section--contact red"}>
             <div className="section--header">
                 <h2>Contact Me</h2>
             </div>

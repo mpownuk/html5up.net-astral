@@ -45,16 +45,14 @@
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
   border-bottom: 1rem solid #ffffff;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .header .header--icon .header--icon--triangle__none {
-  width: 0;
-  height: 0;
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
   border-bottom: 0rem solid #ffffff;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .section {
@@ -68,6 +66,7 @@
   width: 100%;
   height: 26rem;
   text-align: center;
+  transition: 0.3s;
 }
 
 .section .section--home .section--home--container {
@@ -104,7 +103,6 @@
 
 .section .section--work {
   width: 100%;
-  height: auto;
   padding: 1rem;
 }
 
@@ -173,6 +171,38 @@
 .section .section--contact .section--contact--form button {
   background-color: #222222;
   color: #ffffff;
+}
+
+.red {
+  overflow: hidden;
+  animation: aaa 0.8s forwards linear;
+}
+
+@keyframes aaa {
+  0% {
+    height: 100%;
+    opacity: 1;
+  }
+  100% {
+    height: 0%;
+    opacity: 0;
+  }
+}
+
+.blue {
+  overflow: hidden;
+  animation: bbb 0.4s forwards;
+}
+
+@keyframes bbb {
+  0% {
+    height: 0%;
+    opacity: 0;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+  }
 }
 
 .paragraph {
@@ -244,6 +274,9 @@
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto auto;
   }
+  .section .section--contact {
+    padding: 2rem;
+  }
   .section .section--contact .section--contact--form .section--contact--form--button {
     width: 10rem;
   }
@@ -254,7 +287,7 @@
     flex-direction: row;
     justify-content: center;
     margin: auto;
-    width: auto;
+    width: 920px;
   }
   .section .section--home {
     width: 100%;

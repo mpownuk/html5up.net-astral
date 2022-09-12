@@ -1,6 +1,6 @@
-export const Work = () => {
+export const Work = ({triangles}) => {
     return (
-        <div className="section--work">
+        <div className={triangles[1] ? "section--work blue" : "section--work red"}>
             <div className="section--header">
                 <h2>Work</h2>
                 <p className='paragraph'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tenetur voluptate laborum culpa in dolorum itaque veritatis reprehenderit porro recusandae accusantium excepturi cumque, illum deserunt.</p>
