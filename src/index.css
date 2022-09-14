@@ -171,11 +171,18 @@
 .section .section--contact .section--contact--form button {
   background-color: #222222;
   color: #ffffff;
+  transition: 0.2s;
+}
+
+.section .section--contact .section--contact--form button:hover {
+  background-color: #111111;
+  color: #ffffff;
+  transition: 0.2s;
 }
 
 .red {
   overflow: hidden;
-  animation: aaa 0.8s forwards linear;
+  animation: aaa 0.3s forwards linear;
 }
 
 @keyframes aaa {
