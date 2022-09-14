@@ -18,7 +18,7 @@ export const ContactMe = ({triangles}) => {
                     <textarea name="" placeholder="Message" rows={6}></textarea>
                 </div>
                 <div className="section--contact--form--button">
-                    <button type="submit">Send Message</button>
+                    <button type="submit" onClick={(event)=>{event.preventDefault()}}>Send Message</button>
                 </div>
             </form>
         </div>
