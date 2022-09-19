@@ -1,13 +1,13 @@
 
-export const Home = ({triangles, className}) => {
+export const Home = ({triangles}) => {
 
 
 
     return (
         <div className={triangles[0] ? "section--home blue" : "section--home red"}>
             <div className='section--home--container'>
-                <div className='section--home--header'>
-                    <h1 className='section--home--header__heading'>Jane Doe</h1>
+                <div className='section--header'>
+                    <h1>Jane Doe</h1>
                     <p className="paragraph">Senior Astral Projectionist</p>
                 </div>
                 <div className='section--image'>
