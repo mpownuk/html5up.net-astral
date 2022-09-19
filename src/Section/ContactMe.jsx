@@ -4,7 +4,7 @@ export const ContactMe = ({triangles}) => {
             <div className="section--header">
                 <h2>Contact Me</h2>
             </div>
-            <form className="section--contact--form">
+            <form onSubmit={(event)=>{event.preventDefault()}} className="section--contact--form">
                 <div className="section--contact--form--item1">
                     <input type="text" name="name" placeholder="Name"></input>
                 </div>
@@ -18,7 +18,7 @@ export const ContactMe = ({triangles}) => {
                     <textarea name="" placeholder="Message" rows={6}></textarea>
                 </div>
                 <div className="section--contact--form--button">
-                    <button type="submit" onClick={(event)=>{event.preventDefault()}}>Send Message</button>
+                    <button type="submit" >Send Message</button>
                 </div>
             </form>
         </div>

@@ -12,9 +12,11 @@ export const Main = () => {
 
     return (
         <main className="main--container">
-            <Header onClick={displayTriangle} triangles={triangles}/>
-            <Section triangles={triangles}/>
-            <Footer />
+            <div className="wrapper">
+                <Header onClick={displayTriangle} triangles={triangles}/>
+                <Section triangles={triangles}/>
+                <Footer />
+            </div>
         </main>
     )
 }
