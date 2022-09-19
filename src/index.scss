@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,200,300italic,200italic");
 
 $heading-color: #333333;
 $paragraph-color: #656565;
@@ -134,13 +134,13 @@ $input-bg: #f2f2f2;
             font-size: 1.8rem;
             margin: 2rem 0 0 0;
             color: $heading-color;
-            font-weight: 400;
+            font-weight: 200;
         }
         h2 {
             font-size: 1.2rem;
             margin: 1rem 0 1rem 0;
             color: $heading-color;            
-            font-weight: 400;
+            font-weight: 200;
         }
         p {
             margin: 0 0 2rem 0;
@@ -156,34 +156,51 @@ $input-bg: #f2f2f2;
             grid-template-columns: auto;
             grid-template-rows: auto auto auto auto auto;
             gap: 1rem;
-            .section--contact--form--item1 {
+            .section--contact--form--item1, .section--contact--form--item2, .section--contact--form--button {
                 width: 100%;
             }
-            .section--contact--form--item2 {
-                width: 100%;
-            }
-            .section--contact--form--button {
-                width: 100%;
-            }
-            input, textarea, button {
-                width: 100%;
-                font-size: 0.8rem;
-                font-weight: 100;
-                border: none;
-                line-height: 1.5rem;
-                padding: 0.625rem;
-                background-color: $input-bg;
-            }
-            button {
-                background-color: #222222;
-                color: #ffffff;
-                transition: 0.2s;
-            }
-            button:hover {
-                background-color: #111111;
-                color: #ffffff;
-                transition: 0.2s;
-            }
+        }
+    }
+    input, textarea, button {
+        width: 100%;
+        font-size: 0.8rem;
+        border: none;
+        line-height: 1.5rem;
+        padding: 0.625rem;
+        background-color: $input-bg;
+    }
+    button {
+        background-color: #222222;
+        color: #ffffff;
+        transition: 0.2s;
+    }
+    button:hover {
+        background-color: #111111;
+        color: #ffffff;
+        transition: 0.2s;
+    }
+
+    .side--button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 2;
+        width: 4rem;
+        height: 4rem;
+        background-color: rgb(20, 20, 20);
+        margin-top: -2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        opacity: 0.8;
+        .arrow {
+            width: 1rem;
+            height: 1rem;
+            border-right: #f0f0f0 solid 5px;
+            border-bottom: #f0f0f0 solid 5px;
+            border-radius: 2px;
+            transform: rotate(-45deg);
+            margin: 0.4rem 0 0 1.2rem;
         }
     }
 }
@@ -305,6 +322,10 @@ $input-bg: #f2f2f2;
                 .section--image {
                     width: 20rem;
                     height: 18rem;
+                    .section--home--image {
+                        width: 100%;
+                        height: auto;
+                    }
                 }
             }
         }

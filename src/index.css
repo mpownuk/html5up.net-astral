@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,200,300italic,200italic");
 * {
   margin: 0;
   box-sizing: border-box;
@@ -145,14 +145,14 @@
   font-size: 1.8rem;
   margin: 2rem 0 0 0;
   color: #333333;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .section .section--header h2 {
   font-size: 1.2rem;
   margin: 1rem 0 1rem 0;
   color: #333333;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .section .section--header p {
@@ -173,38 +173,54 @@
   gap: 1rem;
 }
 
-.section .section--contact .section--contact--form .section--contact--form--item1 {
+.section .section--contact .section--contact--form .section--contact--form--item1, .section .section--contact .section--contact--form .section--contact--form--item2, .section .section--contact .section--contact--form .section--contact--form--button {
   width: 100%;
 }
 
-.section .section--contact .section--contact--form .section--contact--form--item2 {
-  width: 100%;
-}
-
-.section .section--contact .section--contact--form .section--contact--form--button {
-  width: 100%;
-}
-
-.section .section--contact .section--contact--form input, .section .section--contact .section--contact--form textarea, .section .section--contact .section--contact--form button {
+.section input, .section textarea, .section button {
   width: 100%;
   font-size: 0.8rem;
-  font-weight: 100;
   border: none;
   line-height: 1.5rem;
   padding: 0.625rem;
   background-color: #f2f2f2;
 }
 
-.section .section--contact .section--contact--form button {
+.section button {
   background-color: #222222;
   color: #ffffff;
   transition: 0.2s;
 }
 
-.section .section--contact .section--contact--form button:hover {
+.section button:hover {
   background-color: #111111;
   color: #ffffff;
   transition: 0.2s;
+}
+
+.section .side--button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 2;
+  width: 4rem;
+  height: 4rem;
+  background-color: #141414;
+  margin-top: -2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  opacity: 0.8;
+}
+
+.section .side--button .arrow {
+  width: 1rem;
+  height: 1rem;
+  border-right: #f0f0f0 solid 5px;
+  border-bottom: #f0f0f0 solid 5px;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  margin: 0.4rem 0 0 1.2rem;
 }
 
 .red {
@@ -329,6 +345,10 @@
   .section .section--home .section--home--container .section--image {
     width: 20rem;
     height: 18rem;
+  }
+  .section .section--home .section--home--container .section--image .section--home--image {
+    width: 100%;
+    height: auto;
   }
   .section .section--work {
     margin: auto;
