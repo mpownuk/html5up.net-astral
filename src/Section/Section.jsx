@@ -3,7 +3,7 @@ import { Home } from "./Home"
 import { Work } from "./Work"
 import { ContactMe } from "./ContactMe"
 
-export const Section = ({triangles}) => {
+export const Section = ({triangles, displayTriangle}) => {
 
     const [sect, setSect] = useState([true, false, false, false])
 
@@ -16,7 +16,7 @@ export const Section = ({triangles}) => {
 
     return (
         <section className="section">
-                {sect[0] ? <Home triangles={triangles} /> : null}
+                {sect[0] ? <Home triangles={triangles} displayTriangle={displayTriangle}/> : null}
                 {sect[1] ? <Work triangles={triangles} /> : null}
                 {sect[2] ? <ContactMe triangles={triangles} /> : null}
         </section>

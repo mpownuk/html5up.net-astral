@@ -14,7 +14,7 @@ export const Main = () => {
         <main className="main--container">
             <div className="wrapper">
                 <Header onClick={displayTriangle} triangles={triangles}/>
-                <Section triangles={triangles}/>
+                <Section triangles={triangles} displayTriangle={displayTriangle}/>
                 <Footer />
             </div>
         </main>
