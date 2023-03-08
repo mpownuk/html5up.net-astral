@@ -145,14 +145,14 @@
   font-size: 1.8rem;
   margin: 2rem 0 0 0;
   color: #333333;
-  font-weight: 200;
+  font-weight: 600;
 }
 
 .section .section--header h2 {
   font-size: 1.2rem;
   margin: 1rem 0 1rem 0;
   color: #333333;
-  font-weight: 200;
+  font-weight: 600;
 }
 
 .section .section--header p {
@@ -343,8 +343,8 @@
     width: 22rem;
   }
   .section .section--home .section--home--container .section--image {
-    width: 20rem;
-    height: 18rem;
+    width: 23rem;
+    height: 20rem;
   }
   .section .section--home .section--home--container .section--image .section--home--image {
     width: 100%;
